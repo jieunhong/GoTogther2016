@@ -64,7 +64,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    //허가요청이 떨어졌을 때 안드로이드에 의해 호출되는 메서드 야옹
+    //허가요청이 떨어졌을 때 안드로이드에 의해 호출되는 메서드 야옹2
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode == MY_LOCATION_REQUEST_CODE) {
