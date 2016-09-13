@@ -4,22 +4,59 @@
     android:layout_height="match_parent">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:text="경로 추가하기"
         android:id="@+id/add_location_auto"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="80dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="여행 추가하기"
-        android:id="@+id/add_travel_list"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="뒤로가기"
+        android:id="@+id/back"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/add_location_auto"
         android:layout_alignStart="@+id/add_location_auto"
-        android:layout_marginBottom="28dp" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="경로 지정 완료"
+        android:id="@+id/next_page"
+        android:layout_alignBottom="@+id/back"
+        android:layout_alignRight="@+id/add_location_auto"
+        android:layout_alignEnd="@+id/add_location_auto" />
+
+    <ListView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36dp"
+        android:background="#ffe4e4"
+        android:id="@+id/location_list"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/add_location_auto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="여행 계획 목록"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
 </RelativeLayout>
