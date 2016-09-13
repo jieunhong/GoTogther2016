@@ -10,41 +10,44 @@
     tools:context="weourus.emirim.hs.kr.gotogether.ActivityMain">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:text="travel"
         android:id="@+id/travel"
-        android:layout_marginTop="131dp"
+        android:layout_marginTop="26dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:text="cafe"
         android:id="@+id/community"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/travel"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="42dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="89dp" />
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:text="member"
         android:id="@+id/member"
         android:layout_alignTop="@+id/community"
-        android:layout_toRightOf="@+id/travel"
-        android:layout_toEndOf="@+id/travel" />
+        android:layout_alignRight="@+id/travel"
+        android:layout_alignEnd="@+id/travel"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="개발자 정보"
         android:id="@+id/developer_infomation"
-        android:layout_below="@+id/community"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
