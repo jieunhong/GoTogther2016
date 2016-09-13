@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.1.1_e7067f89214230db01b0220cb8d3c03ca26507e0\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.4.0_9ba1dd2f2ed13dffd8f81ecd33bcfa5ce9d544a5\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_5f7d316cfb27397becd38b40451df1828bbc76c5\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_b1100644035f23533cd98686dc970a6492bea8ad\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-8.4.0_0e436715eb81f01bf591085f480afce30440782b\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_8468249ded5200f78b9c2972766817164151a04a\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c3f743c88e76b2c1c1f0eb4b5f8d2ea54a41fd2e">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_a78782f35d9f7c02d7560d048ec04220d83756a1\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-8.4.0_1dd58c56b742b8f6115de4f6bd567561cc01a8f1\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.0_6e7bccb6f3bf58458853a7935a97a3b2a4b4387c\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_2e095508267abda5076b5f8e00d951e28d486c92\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-8.4.0_7290230edcdfb5cc34c72a51ce6615e4bbdd7ec5\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-8.4.0_b372fe352be5520a963142efc2d693c14f0995a9\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f4d7a07120e76988f3a15403838d323c2400db83">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_db9437da42edecffd43d9f1d12c9585c932a3c80\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-8.4.0_43218c1282d42ef6cd58e452d7a0f1ee08a35262\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-8.4.0_fc85e70017bb62d3ccc7a27f7a1ac53980b3bf18\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-8.4.0_8baa43345dfded65fcd73a6ab9fddb22cc848dcc\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-8.4.0_6c615a457cf50d5b97e6fad82d9b328a1b8dd058\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-8.4.0_1868f541ce7d598ae2c949f4104b5c65f35c74d5\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_27c481114b41803005ce6699587ede6dad69bf3d\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-8.4.0_159bbd7b252a9dbce8dd06744c974f7c0e3058df\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_be17f4abee951ace206075d66ef452b11baeab9e\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-8.4.0_aeac1e0b65d8b40572e4a28e5594742f237c329c\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-8.4.0_5e56b1fed5d2f482a4e64b33bfb9fa83e6cc13bf\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_d83adc4ae270acb3ead759a1b0cd1d99fbb9d4da\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_597010e91a15a369be64a4561db00683d3694303\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_3110a54d1dced4fa3457ab0fd61d292a399e9a76\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-8.4.0_7abb05af4e98f241c491a12c423d2f3bdd8ec840\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_8611079c7e369642b6fb218bbcf0553fa23ef0af\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-8.4.0_890c34d9395656c7ce176e4bf9c28cc8be42841a\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5beeb51b7b4c6b4ca03070f856ce3221c7006a11">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_3f852177605fdedf87c1bc09961f4a753197b787\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\DAHOE\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_b11c20d99c67b0029f301102c29f34b3815676e1\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_22466102e3179e8c506c10453d203510e017c3dd\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_aee8b60f889d5d1bbcb2ea8c519036b6d262badb\classes.dex" />
+    </item>
+    <item
+        jar="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5ddf5f4817565c9db82613c16093f76640a54e15">
+        <dex dex="C:\dev\android-play-places-master\PlaceCompleteActivity\Application\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.1.1_5796f1cb363c2bd5d3266949266d4495b4276037\classes.dex" />
+    </item>
+
+</items>
