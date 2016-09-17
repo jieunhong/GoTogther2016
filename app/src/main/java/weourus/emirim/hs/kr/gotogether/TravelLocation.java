@@ -20,7 +20,7 @@ public class TravelLocation {
     public LatLng getLatLng(){
         return mLatlng;
     }
-    public void setLaLng(LatLng latlng){
+    public void setLatLng(LatLng latlng){
         this.mLatlng = latlng;
     }
     public String getTitle(){

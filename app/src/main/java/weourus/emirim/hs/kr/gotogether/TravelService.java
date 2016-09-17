@@ -8,6 +8,6 @@ import java.util.ArrayList;
 public class TravelService {
 
     public static ArrayList<Travel> travels = new ArrayList<Travel>();
-
+    public static Travel tmpTravel ;
 
 }

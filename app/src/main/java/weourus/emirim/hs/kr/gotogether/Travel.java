@@ -9,7 +9,7 @@ public class Travel {
 
     private String mName;
     private int mDay;
-    private ArrayList<TravelLocation> mLocations = new ArrayList<TravelLocation>();
+    public ArrayList<TravelLocation> mLocations = new ArrayList<TravelLocation>();
 
     public Travel() {
     }

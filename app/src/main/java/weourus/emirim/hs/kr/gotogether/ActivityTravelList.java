@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -25,17 +27,34 @@ public class ActivityTravelList extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.travel_list_activity);
         add_travel = (Button)findViewById(R.id.add_travel);
-
+        listview = (ListView)findViewById(R.id.travel_list);
         add_travel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TravelService.tmpTravel = new Travel("",0,null);
                 Intent intent = new Intent(getApplicationContext(),ActivityTravelAdd.class);
                 startActivity(intent);
             }
         });
 
-
+        try {
+            listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Log.d("성공", ": 디테일 ");
+                    Log.d("성공!"," : "+position);
+                    Intent intent = new Intent(getApplicationContext(),ActivityTravelDetail.class);
+                    intent.putExtra("position", position);
+                    startActivity(intent);
+                 //   Toast.makeText(ActivityTravelList.this, position, Toast.LENGTH_LONG).show();
+                }
+            });
+        }catch (Exception e){
+            Log.d("에러"," : 디테일");
+        }
     }
+
+
 
     @Override
     protected void onResume() {
