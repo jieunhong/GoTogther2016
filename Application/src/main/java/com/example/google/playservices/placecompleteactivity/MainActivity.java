@@ -25,11 +25,22 @@ import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 
 import com.example.android.common.activities.SampleActivityBase;
 import com.example.android.common.logger.Log;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.GoogleMap.OnMapLongClickListener;
+import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.LatLng;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.TextUtils;
@@ -38,7 +49,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends SampleActivityBase {
+public class MainActivity extends SampleActivityBase implements OnMapReadyCallback, OnMapLongClickListener {
     /**
      * Request code for the autocomplete activity. This will be used to identify results from the
      * autocomplete activity in onActivityResult.
@@ -48,6 +59,12 @@ public class MainActivity extends SampleActivityBase {
     private TextView mPlaceDetailsText;
 
     private TextView mPlaceAttribution;
+
+    GoogleMap map;
+    MapFragment mapFr;
+    double latitude=37.554752;
+    double longitude=126.970631;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +84,9 @@ public class MainActivity extends SampleActivityBase {
         // Retrieve the TextViews that will display details about the selected place.
         mPlaceDetailsText = (TextView) findViewById(R.id.place_details);
         mPlaceAttribution = (TextView) findViewById(R.id.place_attribution);
+
+        mapFr=(MapFragment)getFragmentManager().findFragmentById(R.id.map);
+        mapFr.getMapAsync(this);
     }
 
     private void openAutocompleteActivity() {
@@ -107,9 +127,10 @@ public class MainActivity extends SampleActivityBase {
                 Log.i(TAG, "Place Selected: " + place.getName());
 
                 // Format the place's details and display them in the TextView.
-                mPlaceDetailsText.setText(formatPlaceDetails(getResources(), place.getName(),
-                        place.getId(), place.getAddress(), place.getPhoneNumber(),
-                        place.getWebsiteUri()));
+                mPlaceDetailsText.setText("장소 : "+place.getName()+"\n주소 : "+place.getAddress());
+
+                final LatLng Loc=new LatLng(place.getLatLng().latitude,place.getLatLng().longitude);
+                map.animateCamera(CameraUpdateFactory.newLatLngZoom(Loc,16));
 
                 // Display attributions if required.
                 CharSequence attributions = place.getAttributions();
@@ -128,15 +149,21 @@ public class MainActivity extends SampleActivityBase {
         }
     }
 
-    /**
-     * Helper method to format information about a place nicely.
-     */
-    private static Spanned formatPlaceDetails(Resources res, CharSequence name, String id,
-            CharSequence address, CharSequence phoneNumber, Uri websiteUri) {
-        Log.e(TAG, res.getString(R.string.place_details, name, id, address, phoneNumber,
-                websiteUri));
-        return Html.fromHtml(res.getString(R.string.place_details, name, id, address, phoneNumber,
-                websiteUri));
 
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        map=googleMap;
+
+
+        UiSettings uiSettings=map.getUiSettings();
+        uiSettings.setZoomControlsEnabled(true);
+
+        final LatLng Loc=new LatLng(latitude,longitude);
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(Loc,16));
+    }
+
+    public void onMapLongClick(LatLng point){
+        map.clear();
     }
 }

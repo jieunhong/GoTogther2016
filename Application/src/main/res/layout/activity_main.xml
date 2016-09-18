@@ -25,29 +25,17 @@
         android:paddingBottom="@dimen/vertical_page_margin"
         android:paddingLeft="@dimen/horizontal_page_margin"
         android:paddingRight="@dimen/horizontal_page_margin"
-        android:paddingTop="@dimen/vertical_page_margin">
-
-        <TextView
-            android:text="@string/intro_message"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal" />
+        android:paddingTop="@dimen/vertical_page_margin"
+        android:weightSum="1">
 
         <Button
             android:id="@+id/open_button"
-            android:text="@string/open_activity"
+            android:text="검색하기"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_medium"
             android:layout_gravity="center" />
-
-        <TextView
-            android:text="@string/selected_place"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/place_details"
@@ -63,5 +51,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/margin_medium" />
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+            android:layout_weight="5" />
     </LinearLayout>
 </ScrollView>
