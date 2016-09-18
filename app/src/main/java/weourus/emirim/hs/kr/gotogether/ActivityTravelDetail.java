@@ -19,6 +19,7 @@ public class ActivityTravelDetail extends Activity{
     LocationListViewAdapter adapter;
     Button delete;
     Button edit;
+    Button back;
     int position;
 
     @Override
@@ -31,6 +32,7 @@ public class ActivityTravelDetail extends Activity{
         travel_info_list = (ListView)findViewById(R.id.travel_info_list);
         delete = (Button)findViewById(R.id.travel_delete);
         edit = (Button)findViewById(R.id.travel_edit);
+        back = (Button)findViewById(R.id.back_travel_list);
 
     }
 
@@ -70,6 +72,13 @@ public class ActivityTravelDetail extends Activity{
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),ActivityTravelEdit.class);
                 intent.putExtra("position",position);
+                startActivity(intent);
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),ActivityTravelList.class);
                 startActivity(intent);
             }
         });
