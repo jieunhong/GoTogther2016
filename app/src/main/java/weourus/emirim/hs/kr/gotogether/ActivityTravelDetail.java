@@ -3,6 +3,7 @@ package weourus.emirim.hs.kr.gotogether;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -20,11 +21,13 @@ public class ActivityTravelDetail extends Activity{
     Button delete;
     Button edit;
     Button back;
+    Button travel;
     int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("이동 : ","TraveDetail");
         setContentView(R.layout.travel_detail_activity);
 
         travel_info_day = (TextView)findViewById(R.id.travel_info_day);
@@ -33,6 +36,7 @@ public class ActivityTravelDetail extends Activity{
         delete = (Button)findViewById(R.id.travel_delete);
         edit = (Button)findViewById(R.id.travel_edit);
         back = (Button)findViewById(R.id.back_travel_list);
+        travel = (Button)findViewById(R.id.travel_travel);
 
     }
 
@@ -70,6 +74,9 @@ public class ActivityTravelDetail extends Activity{
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TravelService.tmpTravel.setLocations(TravelService.travels.get(position).getLocations());
+                TravelService.tmpTravel.setName(TravelService.travels.get(position).getName());
+                TravelService.tmpTravel.setDay(TravelService.travels.get(position).getDay());
                 Intent intent = new Intent(getApplicationContext(),ActivityTravelEdit.class);
                 intent.putExtra("position",position);
                 startActivity(intent);
@@ -79,6 +86,14 @@ public class ActivityTravelDetail extends Activity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),ActivityTravelList.class);
+                startActivity(intent);
+            }
+        });
+        travel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("들어감","ghgh");
+                Intent intent = new Intent(getApplicationContext(),ActivityTravel.class);
                 startActivity(intent);
             }
         });

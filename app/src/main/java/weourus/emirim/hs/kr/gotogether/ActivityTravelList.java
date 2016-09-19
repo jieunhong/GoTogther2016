@@ -19,6 +19,7 @@ public class ActivityTravelList extends Activity{
 
     private static final String TAG = "함께가요:ActivityTravelList";
     Button add_travel;
+    Button home;
     ListView listview ;
     TravelListViewAdapter adapter;
 
@@ -27,6 +28,7 @@ public class ActivityTravelList extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.travel_list_activity);
         add_travel = (Button)findViewById(R.id.add_travel);
+        home = (Button)findViewById(R.id.home);
         listview = (ListView)findViewById(R.id.travel_list);
         add_travel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +38,6 @@ public class ActivityTravelList extends Activity{
                 startActivity(intent);
             }
         });
-
         try {
             listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -52,6 +53,13 @@ public class ActivityTravelList extends Activity{
         }catch (Exception e){
             Log.d("에러"," : 디테일");
         }
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),ActivityMain.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

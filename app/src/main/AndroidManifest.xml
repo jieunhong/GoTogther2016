@@ -2,33 +2,63 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="weourus.emirim.hs.kr.gotogether">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:windowSoftInputMode="adjustPan"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCTRxSzCB7JBJHsRStOME6l8hj-T1plfVM" />
+
         <activity android:name=".ActivityMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".ActivityTravelAdd"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ActivityTravelList"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ActivityLocationAddAutoComplete"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ActivityLocationAdd"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ActivityLocationList"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ActivityTravelDetail"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ActivityTravelEdit"
+        <activity
+            android:name=".ActivityTravelAdd"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityTravelList"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityLocationAddAutoComplete"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityLocationAdd"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityLocationList"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityTravelDetail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityTravelEdit"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityLocationListEdit"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityLocationAddAutoCompleteEdit"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivityLocationAddEdit"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MainActivity3"></activity>
+        <activity android:name=".ActivityTravel"
             android:theme="@style/AppTheme"></activity>
     </application>
 

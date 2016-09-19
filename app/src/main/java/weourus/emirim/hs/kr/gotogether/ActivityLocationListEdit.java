@@ -8,14 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.google.android.gms.maps.model.LatLng;
-
 import java.util.ArrayList;
 
 /**
  * Created by Asus on 2016-09-12.
  */
-public class ActivityLocationList extends Activity  implements View.OnClickListener{
+public class ActivityLocationListEdit extends Activity  implements View.OnClickListener{
 
     private static final String TAG = "ActivityLocationList";
     Button add_location_auto;
@@ -28,13 +26,14 @@ public class ActivityLocationList extends Activity  implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("이동 : ","TraveLocationListEdit");
         setContentView(R.layout.location_list_activity);
 
         add_location_auto = (Button)findViewById(R.id.add_location_auto);
         add_location_auto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),ActivityLocationAddAutoComplete.class);
+                Intent intent = new Intent(getApplicationContext(),ActivityLocationAddAutoCompleteEdit.class);
                 startActivity(intent);
             }
         });
@@ -64,9 +63,7 @@ public class ActivityLocationList extends Activity  implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Log.d("에러 : ",""+position);
-        //TravelService.tmpTravel.setLocations(location_list);
-            Intent intent = new Intent(getApplicationContext(),ActivityTravelAdd.class);
+            Intent intent = new Intent(getApplicationContext(),ActivityTravelEdit.class);
             startActivity(intent);
     }
 }
