@@ -6,8 +6,8 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:text="여행 추가하기"
         android:id="@+id/add_travel"
+        android:background="@drawable/travel_add"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

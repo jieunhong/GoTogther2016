@@ -6,8 +6,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="경로 추가하기"
         android:id="@+id/add_location_auto"
+        android:background="@drawable/longitude_add"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="80dp"
         android:layout_alignParentBottom="true"
@@ -19,24 +19,24 @@
     <Button
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:text="뒤로가기"
         android:id="@+id/back"
+        android:background="@drawable/back"
+        android:layout_marginBottom="15dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/add_location_auto"
-        android:layout_alignStart="@+id/add_location_auto"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_toLeftOf="@+id/next_page"
+        android:layout_toStartOf="@+id/next_page"
+        android:layout_marginRight="20dp" />
 
     <Button
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:text="경로 지정 완료"
         android:id="@+id/next_page"
-        android:layout_alignBottom="@+id/back"
+        android:background="@drawable/course_completion"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignTop="@+id/back"
         android:layout_alignRight="@+id/add_location_auto"
-        android:layout_alignEnd="@+id/add_location_auto"
-        android:layout_marginLeft="10dp" />
+        android:layout_alignEnd="@+id/add_location_auto" />
 
     <ListView
         android:orientation="vertical"

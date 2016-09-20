@@ -41,10 +41,13 @@ public class ActivityLocationAdd extends Activity {
                 location_list.add(new TravelLocation( new LatLng(37.4664393,126.9305103), "신림 포도몰 롯데시네마"));
                 location_list.add(new TravelLocation( new LatLng(37.4664393,126.9305103), "큰엄마네 떡볶이"));
                 location_list.add(new TravelLocation( new LatLng(37.4664393,126.9305103), "선린인터넷고등학교"));*/
-                if (TravelService.tmpTravel.mLocations==null) TravelService.tmpTravel.mLocations = new ArrayList<TravelLocation>();
+                if (TravelService.tmpTravel.mLocations==null)
+                TravelService.tmpTravel.mLocations = new ArrayList<TravelLocation>();
                 TravelService.tmpTravel.mLocations.add(new TravelLocation( new LatLng(37.4664393,126.9305103), "미림여자정보과학고"));
                 Intent intent = new Intent(getApplicationContext(),ActivityLocationList.class);
                 startActivity(intent);
+
+                //ArrayList<DBTravelLocation> tmp_tls
             }
         });
     }

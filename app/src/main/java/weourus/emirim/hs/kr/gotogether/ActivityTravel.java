@@ -1,7 +1,5 @@
 package weourus.emirim.hs.kr.gotogether;
 
-import android.app.Activity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -20,15 +18,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMapLongClickListener;
 
 import java.util.ArrayList;
 
-/**
- * Created by Asus on 2016-09-19.
- */
-public class ActivityTravel extends FragmentActivity implements OnMapReadyCallback,OnMapClickListener,OnMapLongClickListener  {
+public class ActivityTravel extends FragmentActivity implements OnMapReadyCallback,OnMapLongClickListener  {
     private GoogleMap mMap;
     PolylineOptions polylineOptions;
     ArrayList<LatLng> arrayPoints;
@@ -36,8 +30,7 @@ public class ActivityTravel extends FragmentActivity implements OnMapReadyCallba
     double latitude = 37.554752;
     double longitude = 126.970631;
 
-    public final int MY_LOCATION_REQUEST_CODE = 101;
-
+    public final int MY_LOCATION_REQUEST_CODE = 101;//임의로 정한 값(바뀌어도 상관 없음)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,13 +50,15 @@ public class ActivityTravel extends FragmentActivity implements OnMapReadyCallba
 
         final LatLng Loc = new LatLng(latitude, longitude);
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(Loc, 16));
+        //처음 지도 실행 화면으로 서울역을 가리킴
 
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)//마시멜로우 이전방식에서 허가되어있으면 실행
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
+            //마시멜로우 이전 방식을 사용할 때 허가가 된 상태이면 실행
             mMap.setMyLocationEnabled(true);
         } else {
-            Toast.makeText(ActivityTravel.this, "You have to accept to enjoy all app's services!", Toast.LENGTH_LONG).show();
-            //허가요청하는 거
+            //허가를 요청
+            Toast.makeText(ActivityTravel.this, "앱을 사용하기 위해 승인을 받아야 합니다.", Toast.LENGTH_LONG).show();
             ActivityCompat.requestPermissions(this,
                     new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     MY_LOCATION_REQUEST_CODE);
@@ -71,8 +66,10 @@ public class ActivityTravel extends FragmentActivity implements OnMapReadyCallba
 
         arrayPoints = new ArrayList<LatLng>();
 
-        mMap.setOnMapClickListener(this);
+        printLine();
         mMap.setOnMapLongClickListener(this);
+
+
     }
 
     //허가요청이 떨어졌을 때 안드로이드에 의해 호출되는 메서드
@@ -82,7 +79,9 @@ public class ActivityTravel extends FragmentActivity implements OnMapReadyCallba
             if (permissions.length == 1 &&
                     permissions[0] == android.Manifest.permission.ACCESS_FINE_LOCATION &&
                     grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                //noinspection MissingPermission
                 mMap.setMyLocationEnabled(true);
+                //현재 위치를 지도에 나타낼지에 대한 여부
             } else {
                 // Permission was denied. Display an error message.
             }
@@ -90,6 +89,7 @@ public class ActivityTravel extends FragmentActivity implements OnMapReadyCallba
     }
 
     private boolean chkGpsService() {
+        //앱을 실행했을 때 GPS가 켜져있는지 확인하고 꺼져있다면 설정창을 띄울 수 있게 하는 기능
         String gps = android.provider.Settings.Secure.getString(getContentResolver(), android.provider.Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
 
         if(!(gps.matches(".*gps.*")&&gps.matches(".*network.*"))) {
@@ -117,17 +117,19 @@ public class ActivityTravel extends FragmentActivity implements OnMapReadyCallba
         }
 
     }
-    public void onMapClick(LatLng latLng){
+    public void printLine(){
+        //
         double arrLatLng[][]={{37.555,126.9},{37.559,126.9711},{37.8,127.5}};
 
         if(arrLatLng[0][0]!=0) {
+            //DB에 좌표값이 저장되어 있을 때 실행
             mMap.clear();
             for (int i = 0; i < arrLatLng.length; i++) {
                 final LatLng Loc = new LatLng(arrLatLng[i][0], arrLatLng[i][1]);
                 if (i == 0) {
                     mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(Loc, 16));
+                    //DB에 좌표값이 있을 경우 여행의 시작지점으로 지도를 다시 셋팅
                 }
-                //선택한 장소에 핀 꽂기
                 MarkerOptions marker = new MarkerOptions();
                 marker.position(Loc);
                 mMap.addMarker(marker);

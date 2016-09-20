@@ -11,6 +11,7 @@ public class TravelLocation {
     private LatLng mLatlng;
     private String mTitle;
 
+
     public TravelLocation(){
     }
     public TravelLocation(LatLng latlng, String title){

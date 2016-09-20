@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
+
 /**
  * Created by Asus on 2016-09-12.
  */
@@ -22,6 +25,8 @@ public class ActivityTravelList extends Activity{
     Button home;
     ListView listview ;
     TravelListViewAdapter adapter;
+    private Realm realm;
+    private RealmConfiguration realmConfig;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,9 @@ public class ActivityTravelList extends Activity{
         add_travel = (Button)findViewById(R.id.add_travel);
         home = (Button)findViewById(R.id.home);
         listview = (ListView)findViewById(R.id.travel_list);
+        realmConfig = new RealmConfiguration.Builder(this).build();
+        realm = Realm.getInstance(realmConfig);
+
         add_travel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,9 +100,10 @@ public class ActivityTravelList extends Activity{
         listview = (ListView) findViewById(R.id.travel_list);
         listview.setAdapter(adapter);
 
+        DBTravel person = realm.where(DBTravel.class).findFirst();
+        //(person.getName() + ":" + person.getAge());
         // 첫 번째 아이템 추가.
-        for(int i = 0 ; i < TravelService.travels.size(); i++){
-            adapter.addItem(TravelService.travels.get(i).getName(),TravelService.travels.get(i).getDay()) ;
-        }
+            adapter.addItem( person.getTravelName(), person.getTravelDay()) ;
+
     }
 }

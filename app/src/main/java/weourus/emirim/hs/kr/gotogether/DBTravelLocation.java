@@ -32,7 +32,7 @@ public class DBTravelLocation extends RealmObject {
 
     public DBTravelLocation() {
     }
-    public DBTravelLocation(String TLName, double TLLat, double TLLog) {
+    void add(String TLName, double TLLat, double TLLog) {
         this.TLName = TLName;
         this.TLLat = TLLat;
         this.TLLog = TLLog;
