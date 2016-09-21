@@ -39,8 +39,9 @@ public class ActivityMain extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         moveTaskToBack(true);
-                        finish();
                         android.os.Process.killProcess(android.os.Process.myPid());
+                        Intent intent = new Intent(getApplicationContext(),ActivitySplash.class);
+                        startActivity(intent);
                     }
 
                 })

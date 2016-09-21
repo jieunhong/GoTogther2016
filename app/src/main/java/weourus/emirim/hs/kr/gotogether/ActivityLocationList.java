@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -60,6 +61,16 @@ public class ActivityLocationList extends Activity  implements View.OnClickListe
         next = (Button)findViewById(R.id.next_page);
         next.setOnClickListener(this);
 
+        try {
+            listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    TravelService.tmpTravel.mLocations.remove(position);
+                }
+            });
+        }catch (Exception e){
+            Log.d("에러"," : 디테일");
+        }
     }
 
     @Override

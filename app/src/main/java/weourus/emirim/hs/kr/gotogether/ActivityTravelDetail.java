@@ -98,4 +98,9 @@ public class ActivityTravelDetail extends Activity{
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(),ActivityTravelList.class);
+        startActivity(intent);
+    }
 }

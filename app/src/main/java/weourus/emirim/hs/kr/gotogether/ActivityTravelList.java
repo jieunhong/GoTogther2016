@@ -1,8 +1,10 @@
 package weourus.emirim.hs.kr.gotogether;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -103,7 +105,13 @@ public class ActivityTravelList extends Activity{
         DBTravel person = realm.where(DBTravel.class).findFirst();
         //(person.getName() + ":" + person.getAge());
         // 첫 번째 아이템 추가.
-            adapter.addItem( person.getTravelName(), person.getTravelDay()) ;
-
+        if(person != null) {
+            adapter.addItem(person.getTravelName(), person.getTravelDay());
+        }
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(),ActivityMain.class);
+        startActivity(intent);
     }
 }
