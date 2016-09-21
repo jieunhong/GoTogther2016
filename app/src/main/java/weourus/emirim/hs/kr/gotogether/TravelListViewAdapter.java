@@ -50,9 +50,11 @@ public class TravelListViewAdapter extends BaseAdapter {
         Travel listViewItem = listViewItemList.get(position);
 
         // 아이템 내 각 위젯에 데이터 반영
-        titleTextView.setText(listViewItem.getName());
-        descTextView.setText(""+listViewItem.getDay()+"일차 일정입니다!");
 
+        if (listViewItem !=null) {
+            titleTextView.setText(listViewItem.getName());
+            descTextView.setText("" + listViewItem.getDay() + "일차 일정입니다!");
+        }
         return convertView;
     }
 

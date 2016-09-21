@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmList;
+import io.realm.RealmResults;
 
 /**
  * Created by Asus on 2016-09-12.
@@ -159,13 +160,6 @@ public class ActivityTravelAdd extends Activity {
 
             }
         });
-
-        DBTravel person = realm.where(DBTravel.class).findFirst();
-        //(person.getName() + ":" + person.getAge());
-        Toast.makeText(ActivityTravelAdd.this, person.getTravelName() + " : " + person.getTravelDay(), Toast.LENGTH_SHORT).show();
-        for (int i = 0; i < person.getTravelLocations().size(); i++){
-            Toast.makeText(this, "" + i + " / " + person.getTravelLocations().get(i).getTLName() , Toast.LENGTH_SHORT).show();
-        }
     }
     @Override
     protected void onResume() {

@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
+import io.realm.RealmResults;
 
 /**
  * Created by Asus on 2016-09-12.
@@ -102,11 +103,12 @@ public class ActivityTravelList extends Activity{
         listview = (ListView) findViewById(R.id.travel_list);
         listview.setAdapter(adapter);
 
-        DBTravel person = realm.where(DBTravel.class).findFirst();
-        //(person.getName() + ":" + person.getAge());
-        // 첫 번째 아이템 추가.
-        if(person != null) {
-            adapter.addItem(person.getTravelName(), person.getTravelDay());
+        RealmResults<DBTravel> results = realm.where(DBTravel.class).findAll();
+        if (results.size() != 0) {
+            for (int i = 0; i < results.size(); i++) {
+                //Toast.makeText(this, "" + i + " / " + person.getTravelLocations().get(i).getTLName() , Toast.LENGTH_SHORT).show();
+                adapter.addItem(results.get(i).getTravelName(), results.get(i).getTravelDay());
+            }
         }
     }
     @Override
